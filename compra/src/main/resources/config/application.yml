@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: siscompras
+  jackson:
+    date-format: yyyy-MM-dd
+    deserialization:
+      fail-on-unknown-properties: false
+server:
+  port: 8080
+
+application:
+  feign:
+    pagamento: http://localhost:8082
+    estoque: http://localhost:8081
