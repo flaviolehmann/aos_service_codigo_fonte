@@ -1,6 +1,6 @@
-package br.edu.ifes.col.siscompras.compras.service.feign;
+package br.edu.ifes.col.siscompras.pagamento.service.feign;
 
-import br.edu.ifes.col.siscompras.compras.service.dto.ItemCompraDTO;
+import br.edu.ifes.col.siscompras.pagamento.service.dto.ItemCompraDTO;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
