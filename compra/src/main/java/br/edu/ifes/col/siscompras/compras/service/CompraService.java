@@ -20,7 +20,8 @@ public class CompraService {
 
         log.info("SISTEMA COMPRAS: Iniciando processo de compra...");
 
-        Float total = itens.stream().reduce(0f, (subtotal, item) -> subtotal + (item.getQuantidade() * item.getValorUnitario()), Float::sum);
+        Float total = itens.stream().reduce(0f, (subtotal, item) -> subtotal +
+                (item.getQuantidade() * item.getValorUnitario()), Float::sum);
         String cartao = "123.456.789.000";
 
         reservarPagamento(cartao, total, itens);

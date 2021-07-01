@@ -44,7 +44,7 @@ public class PagamentoService {
             throw new RegraNegocioException("Erro ao finalizar compra");
         }
 
-        log.info("SISTEMA COMPRAS: Processamento de compra finalizado com sucesso...");
+        log.info("SISTEMA PAGAMENTOS: Processamento de compra finalizado com sucesso...");
     }
 
     private void decrementarEstoque(List<ItemCompraDTO> itens) {
